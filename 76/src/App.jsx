@@ -8,7 +8,7 @@ const App = () => {
   const [title, settitle] = useState(""); // title ki value yaha save ho raha hai
   const [completed, setcompleted] = useState(true); // checkbox ki value yaha save ho raha hai
   const [gender, setgender] = useState("");// gender ki value yaha save ho rahi hai
-  const [city, setcity] = useState('delhi')// city ki value yaha save ho rahi hai
+  const [city, setcity] = useState('delhi')// city ki value yaha save ho rahi hai 
 
   return (
     <div>
