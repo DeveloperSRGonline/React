@@ -14,3 +14,8 @@ onChange={(e) => setcompleted(e.target.checked)}
 type="checkbox"  inko react ki bhash mein props and html ki bhash mein attribute bolte hai
 --<option value="kolkata">Kolkata</option> ismein kolkata directly likh hai vo kuchh kaam ka nah hai jo value ke andar likh hai bo kaam ka hai 
 --yane e.target.value ye jo baat kar raha hai vo value="" is value ki baat kar raha hai 
+const [todos, settodos] = useState("") is mein agar hum directly todos mein kuch rakha hai and agar hum settodos se todos mein kuchh rakhenge toh purana wala replace ho jayega 
+todos is a readonly - ismein hum changes nahi kar payenge 
+toh hum kya karenge [...todos] todos ki "copy" banayenge and x = [...todos] x mein save kar denge
+then hum x.push({...data}) -- pushing data in copied data(x)
+then settodos(x) -- setting the codied data(x)
