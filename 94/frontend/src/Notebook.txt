@@ -1,0 +1,8 @@
+useSelector - store(nothing but file) se component mein data dikhane ke liye hota hai [ye use only hai] - data mein changes nahi kar sakte 
+
+jab bhi hum data change karne ja rahe hai 
+data do tarike ka hoga "sync" change dusra "async"
+async - jo data hai vo API mein ja raha hai api mein update kar rahe ho  -- yaha humein action ki jarurat padegi - action kya bolta hai data ko store mein jane se pahele reducer se jana padega 
+Reducer/slicer - inke hi haath mein taakat hai ki vo store ke data ko change kar sake - ye data ko alag alag slice(tukde) mein segregate karta hai and combinly data ko store mein bhej ta hai  
+action - ka kaam hai api ko call karna req & res .
+sync - jo data hai vo aap ke paas hi rehe raha hai - ye directly reducer mein jata hai - yaha actions ki jarurat nahi padti

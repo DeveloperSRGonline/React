@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "react-hook-form": "^7.57.0"
+  }
+}

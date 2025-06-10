@@ -1,0 +1,33 @@
+
+--state management - usestate ke jariye data management
+--data ko variable mein save karna but abhi tak hamne data ko variable mein save kiya lekin react mein variable kaam hi nahi karta
+--react mein state hook yane usestate hook ka use hota hai ismein hum data ko store karte hai and update bhi kardete hai  iski ko hum state management bolte hai data ka management basically known as state management
+--Abc.jsx -- react ki file ko hi hum component bolte hai
+--two way binding means input data usestate mein save kar ke phir se input mein bhej dena 
+--checkbox mein e.target.value nahi hota e.target.checked hota hai 
+--radio mein bhi targe.value nahi hota target.checked hota hai
+-- const [title, settitle] = useState(""); ismein 
+         "title"(pahele wala [use] karne ke liye)
+         "useState"(dusra wala value [set] karne ke liye)
+--checked = {completed}
+onChange={(e) => setcompleted(e.target.checked)}
+type="checkbox"  inko react ki bhash mein props and html ki bhash mein attribute bolte hai
+--<option value="kolkata">Kolkata</option> ismein kolkata directly likh hai vo kuchh kaam ka nah hai jo value ke andar likh hai bo kaam ka hai 
+--yane e.target.value ye jo baat kar raha hai vo value="" is value ki baat kar raha hai 
+const [todos, settodos] = useState("") is mein agar hum directly todos mein kuch rakha hai and agar hum settodos se todos mein kuchh rakhenge toh purana wala replace ho jayega 
+todos is a readonly - ismein hum changes nahi kar payenge 
+toh hum kya karenge [...todos] todos ki "copy" banayenge and x = [...todos] x mein save kar denge
+then hum x.push({...data}) -- pushing data in copied data(x)
+then settodos(x) -- setting the codied data(x)
+
+
+# 88:
+-- different front end connect with backend with a link (AJAX)
+-- AJAX full form - async javascript and xml (ab xml ke jagah json ka use hota hai)
+-- AJAX full form - async javascript and json 
+-- AJAX ye ek therotical term hai and "fetch" and "axios" ye uske practical implementations hai 
+-- backend jis chij se connect hota hai axios se usse hi bolte hai API (noting but a link used to send or recive)
+-- frontend always request and backend always response to that request 
+-- fetch hamesha string return karta hai ek aur use json me again convert karna padta hai 
+
+-- axios - axios ka ek hi object bana hai and use outsource taki use pata rahe pure application mein kya chal raha hai 
